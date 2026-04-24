@@ -1,1 +1,393 @@
-# RAVIHYDRO
+# RAVIHYDRO<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ravi Hydro Power Project Pvt. Ltd. | Hydro Power Experts</title>
+    <!-- Google Fonts + Tailwind + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #022b3a 0%, #1f7a8c 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.15);
+        }
+        .bg-soft-sky {
+            background-color: #eef6f9;
+        }
+        .stat-card {
+            border-bottom: 3px solid #0284c7;
+        }
+        .project-card {
+            transition: all 0.2s;
+        }
+        .project-card:hover {
+            background-color: #f8fafc;
+            border-left: 4px solid #0284c7;
+        }
+        .service-icon {
+            background: #e0f2fe;
+            width: 64px;
+            height: 64px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+            color: #0369a1;
+        }
+        .gallery-img {
+            transition: transform 0.25s ease, box-shadow 0.2s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px -10px rgba(0,0,0,0.2);
+        }
+        .contact-info a {
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .employee-badge {
+            background: #ffffffdd;
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 py-3 flex flex-wrap items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-water text-3xl text-cyan-700"></i>
+                <span class="font-extrabold text-xl tracking-tight text-gray-800">RAVI HYDRO<span class="text-cyan-700"> POWER</span></span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-gray-600">
+                <a href="#home" class="hover:text-cyan-700 transition">Home</a>
+                <a href="#about" class="hover:text-cyan-700 transition">About</a>
+                <a href="#services" class="hover:text-cyan-700 transition">Services</a>
+                <a href="#projects" class="hover:text-cyan-700 transition">Projects</a>
+                <a href="#team" class="hover:text-cyan-700 transition">Workforce</a>
+                <a href="#gallery" class="hover:text-cyan-700 transition">Gallery</a>
+                <a href="#contact" class="hover:text-cyan-700 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-700 text-2xl focus:outline-none"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4 px-5 flex flex-col space-y-3 text-gray-700 font-medium">
+            <a href="#home" class="py-1 hover:text-cyan-700">Home</a>
+            <a href="#about" class="py-1 hover:text-cyan-700">About</a>
+            <a href="#services" class="py-1 hover:text-cyan-700">Services</a>
+            <a href="#projects" class="py-1 hover:text-cyan-700">Projects</a>
+            <a href="#team" class="py-1 hover:text-cyan-700">Workforce</a>
+            <a href="#gallery" class="py-1 hover:text-cyan-700">Gallery</a>
+            <a href="#contact" class="py-1 hover:text-cyan-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 text-center md:text-left md:flex md:items-center md:justify-between">
+            <div class="md:w-3/5">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">RAVI HYDRO POWER PROJECT <span class="text-yellow-300">PRIVATE LIMITED</span></h1>
+                <p class="text-lg md:text-xl mt-4 text-cyan-50 max-w-2xl">Excellence in Hydro Power Projects • Electrical & Mechanical Works • Manpower Services • Turbine Expertise</p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="bg-white text-cyan-800 px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition"><i class="fas fa-envelope mr-2"></i> Get Quote</a>
+                    <a href="#projects" class="border border-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition"><i class="fas fa-hard-hat mr-2"></i> Our Projects</a>
+                </div>
+            </div>
+            <div class="hidden md:block md:w-2/5 mt-10 md:mt-0">
+                <i class="fas fa-turbine text-8xl text-cyan-200 opacity-80"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT COMPANY ========== -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">About <span class="text-cyan-700">Company</span></h2>
+                <div class="w-20 h-1 bg-cyan-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-gray-600 leading-relaxed mb-4"><span class="font-bold text-gray-800">RAVI HYDRO POWER PROJECT PRIVATE LIMITED</span> was established in <span class="font-semibold">November 2021</span> with a mission to deliver world-class hydro power solutions. Headquartered in Dalhousie, Himachal Pradesh, we specialize in end-to-end execution: from mechanical/electrical works to turbine erection, overhauling, and manpower deployment.</p>
+                    <p class="text-gray-600 leading-relaxed mb-5">Our technical expertise spans Francis, Pelton, Kaplan, Bulb & Propeller turbines, stator/rotor repair, and advanced control panel termination. Having successfully executed major projects across Jammu & Kashmir and Haryana, we stand as a reliable partner for hydro power plants up to 1000MW.</p>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-gray-100 mt-3">
+                        <div class="grid grid-cols-2 gap-3 text-sm">
+                            <div><i class="fas fa-building text-cyan-600 mr-2"></i> <strong>CIN:</strong> U74999HP2021OPC008938</div>
+                            <div><i class="fas fa-chart-line text-cyan-600 mr-2"></i> <strong>NIC Code:</strong> 749</div>
+                            <div><i class="fas fa-users text-cyan-600 mr-2"></i> <strong>Category:</strong> Company limited by shares</div>
+                            <div><i class="fas fa-globe text-cyan-600 mr-2"></i> <strong>Sub-Category:</strong> Non-govt company</div>
+                            <div><i class="fas fa-user-tie text-cyan-600 mr-2"></i> <strong>Whole-time Director:</strong> Sunil Kumar</div>
+                            <div><i class="fas fa-calendar-alt text-cyan-600 mr-2"></i> <strong>Incorporation:</strong> Nov 2021</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-3 flex items-center"><i class="fas fa-map-marker-alt text-cyan-700 mr-2"></i> Corporate Office</h3>
+                    <p class="text-gray-700">3rd Floor, Brahm Gyant Guest House, Samra, Bathri, Dalhousie, Distt. Chamba, Himachal Pradesh - 176306</p>
+                    <div class="mt-4 border-t pt-4 border-cyan-100">
+                        <p><i class="fas fa-envelope mr-2 text-cyan-700"></i> ravihydro2021@gmail.com</p>
+                        <p class="mt-1"><i class="fab fa-whatsapp mr-2 text-green-600"></i> +91 86280 76942</p>
+                        <p><i class="fab fa-instagram mr-2 text-pink-600"></i> @ravi_hydro_2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="py-16 bg-soft-sky">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Core <span class="text-cyan-700">Services</span></h2>
+                <div class="w-20 h-1 bg-cyan-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Hydro power specialized solutions, comprehensive E&M works, and manpower supply</p>
+            </div>
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-5 rounded-xl text-center shadow-sm card-hover">
+                    <div class="service-icon"><i class="fas fa-turbine text-3xl text-cyan-700"></i></div>
+                    <h3 class="font-bold text-lg">Turbine Expertise</h3>
+                    <p class="text-sm text-gray-500">Francis, Pelton, Kaplan, Bulb, Propeller • Erection & Maintenance</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl text-center shadow-sm card-hover">
+                    <div class="service-icon"><i class="fas fa-microchip text-3xl text-cyan-700"></i></div>
+                    <h3 class="font-bold text-lg">Rotor / Stator</h3>
+                    <p class="text-sm text-gray-500">Erection, repairing, centering, alignment & rewinding</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl text-center shadow-sm card-hover">
+                    <div class="service-icon"><i class="fas fa-charging-station text-3xl text-cyan-700"></i></div>
+                    <h3 class="font-bold text-lg">Control Panel</h3>
+                    <p class="text-sm text-gray-500">Termination, governor panel installation & commissioning</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl text-center shadow-sm card-hover">
+                    <div class="service-icon"><i class="fas fa-hard-hat text-3xl text-cyan-700"></i></div>
+                    <h3 class="font-bold text-lg">Manpower Service</h3>
+                    <p class="text-sm text-gray-500">Skilled fitters, welders, riggers, crane operators & supervisors</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl text-center shadow-sm card-hover">
+                    <div class="service-icon"><i class="fas fa-screwdriver-wrench text-3xl text-cyan-700"></i></div>
+                    <h3 class="font-bold text-lg">Overhauling & AMC</h3>
+                    <p class="text-sm text-gray-500">RMC/AMC, vibration sensor, airgap & complete overhauling</p>
+                </div>
+            </div>
+            <div class="mt-10 bg-white p-6 rounded-2xl shadow-md text-center max-w-3xl mx-auto">
+                <p class="text-gray-700"><i class="fas fa-check-circle text-cyan-600 mr-2"></i> <strong>Specialized capabilities:</strong> Erection of draft tube, spiral casing, MIV, earthing & transportation, runner dismantling/installation, stator commissioning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KEY PROJECTS ========== -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Flagship <span class="text-cyan-700">Projects</span></h2>
+                <div class="w-20 h-1 bg-cyan-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-gray-500 mt-3">Major hydro power installations & maintenance across India</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between items-start"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">J&K | 330 MW</span><i class="fas fa-water text-cyan-500"></i></div>
+                    <h3 class="text-xl font-bold mt-3">Kishanganga HEP</h3>
+                    <p class="text-gray-600 text-sm mt-2">Runner dismantling & new runner installation – complete precision work.</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between items-start"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">Haryana | 8 MW</span><i class="fas fa-bolt text-cyan-500"></i></div>
+                    <h3 class="text-xl font-bold mt-3">WYC Yamunanagar</h3>
+                    <p class="text-gray-600 text-sm mt-2">Stator repair, governor panel installation & testing.</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between items-start"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">J&K | 7.5 MW</span><i class="fas fa-gear text-cyan-500"></i></div>
+                    <h3 class="text-xl font-bold mt-3">Brenwar SHEP</h3>
+                    <p class="text-gray-600 text-sm mt-2">Stator repairing, centering & alignment, operational enhancement.</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">J&K | 900 MW</span></div>
+                    <h3 class="text-xl font-bold mt-3">Baglihar HEP</h3>
+                    <p class="text-gray-600 text-sm mt-2">RMC/AMC, Overhauling, vibration & airgap sensor calibration.</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">J&K | 1000 MW</span></div>
+                    <h3 class="text-xl font-bold mt-3">Pakaldul HEP</h3>
+                    <p class="text-gray-600 text-sm mt-2">Erection of Draft-tube, Spiral casing, Turbine, MIV, Earthing & Transportation.</p>
+                </div>
+                <div class="border border-gray-200 rounded-xl p-5 hover:shadow-lg transition project-card bg-white">
+                    <div class="flex justify-between"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">J&K | 120 MW</span></div>
+                    <h3 class="text-xl font-bold mt-3">Sewa-II HEP</h3>
+                    <p class="text-gray-600 text-sm mt-2">Erection & commissioning of stator, full electrical integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WORKFORCE & EMPLOYEE STRENGTH ========== -->
+    <section id="team" class="py-16 bg-gradient-to-r from-slate-50 to-gray-50">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our <span class="text-cyan-700">Workforce</span> Strength</h2>
+                <div class="w-20 h-1 bg-cyan-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-gray-500 mt-3">154+ dedicated professionals powering hydro excellence</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="grid md:grid-cols-5 gap-4 text-center">
+                    <div class="p-4 border rounded-xl bg-cyan-50/40">
+                        <i class="fas fa-user-graduate text-3xl text-cyan-700"></i>
+                        <p class="font-bold text-2xl mt-2">10</p>
+                        <p class="text-sm font-medium">M/Engineer<br>E/Engineer</p>
+                    </div>
+                    <div class="p-4 border rounded-xl bg-indigo-50/40">
+                        <i class="fas fa-hard-hat text-3xl text-indigo-600"></i>
+                        <p class="font-bold text-2xl mt-2">43</p>
+                        <p class="text-sm font-medium">Highly Skilled<br>Foreman/Supervisor</p>
+                    </div>
+                    <div class="p-4 border rounded-xl bg-emerald-50/40">
+                        <i class="fas fa-wrench text-3xl text-emerald-600"></i>
+                        <p class="font-bold text-2xl mt-2">39</p>
+                        <p class="text-sm font-medium">Skilled (Fitter, Welder, Grinder, Rigger, Crane Operator, Driver)</p>
+                    </div>
+                    <div class="p-4 border rounded-xl bg-amber-50/40">
+                        <i class="fas fa-tools text-3xl text-amber-600"></i>
+                        <p class="font-bold text-2xl mt-2">36</p>
+                        <p class="text-sm font-medium">Semi-Skilled<br>Technicians</p>
+                    </div>
+                    <div class="p-4 border rounded-xl bg-slate-100">
+                        <i class="fas fa-hands-helping text-3xl text-slate-600"></i>
+                        <p class="font-bold text-2xl mt-2">26</p>
+                        <p class="text-sm font-medium">Skilled Helper<br>& support staff</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center border-t pt-6">
+                    <p class="text-gray-600"><i class="fas fa-users text-cyan-600 mr-2"></i>Total manpower strength: <span class="font-black text-2xl text-cyan-800">154 Employees</span> – specialized in hydro project execution, on-site erection, maintenance, and turnkey support.</p>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3 justify-center text-sm text-gray-500">
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Fitter</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Welder</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Grinderman</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Rigger</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Crane Operator</span>
+                    <span class="bg-gray-100 px-3 py-1 rounded-full"><i class="fas fa-check"></i> Driver</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WORKING IMAGES GALLERY ========== -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Working <span class="text-cyan-700">Images</span></h2>
+                <div class="w-20 h-1 bg-cyan-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-gray-500 mt-3">On-ground expertise – projects in action</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-md gallery-img">
+                    <img src="https://images.unsplash.com/photo-1566167000752-0e3c07549164?w=600&h=400&fit=crop" alt="Stator repair" class="w-full h-56 object-cover">
+                    <div class="p-3 bg-cyan-50"><p class="text-sm font-semibold"><i class="fas fa-microchip mr-1"></i> Stator Repair & Centering</p></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md gallery-img">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop" alt="Turbine maintenance" class="w-full h-56 object-cover">
+                    <div class="p-3 bg-cyan-50"><p class="text-sm font-semibold"><i class="fas fa-turbine mr-1"></i> Turbine Runner Alignment</p></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md gallery-img">
+                    <img src="https://images.unsplash.com/photo-1581092335871-4a75b9d3a7e7?w=600&h=400&fit=crop" alt="Control panel termination" class="w-full h-56 object-cover">
+                    <div class="p-3 bg-cyan-50"><p class="text-sm font-semibold"><i class="fas fa-charging-station mr-1"></i> Control Panel Termination</p></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md gallery-img">
+                    <img src="https://images.unsplash.com/photo-1616248301382-73d188c39225?w=600&h=400&fit=crop" alt="Hydro Mechanical Work" class="w-full h-56 object-cover">
+                    <div class="p-3 bg-cyan-50"><p class="text-sm font-semibold"><i class="fas fa-hard-hat mr-1"></i> Draft Tube & Spiral Casing</p></div>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-400 mt-6">*Representative images of hydro power technical operations</p>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Get in <span class="text-cyan-300">Touch</span></h2>
+                <div class="w-20 h-1 bg-cyan-400 mx-auto mt-3 rounded-full"></div>
+                <p class="text-gray-300 mt-3">Reach out for collaboration, project inquiries, or manpower solutions</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4 bg-slate-800/50 p-4 rounded-xl">
+                        <div class="bg-cyan-600 w-12 h-12 rounded-full flex items-center justify-center"><i class="fas fa-envelope text-xl"></i></div>
+                        <div><p class="text-sm text-gray-300">Email Us</p><a href="mailto:ravihydro2021@gmail.com" class="text-white font-semibold hover:underline">ravihydro2021@gmail.com</a></div>
+                    </div>
+                    <div class="flex items-center space-x-4 bg-slate-800/50 p-4 rounded-xl">
+                        <div class="bg-green-600 w-12 h-12 rounded-full flex items-center justify-center"><i class="fab fa-whatsapp text-xl"></i></div>
+                        <div><p class="text-sm text-gray-300">WhatsApp / Call</p><a href="https://wa.me/918628076942" target="_blank" class="text-white font-semibold hover:underline">+91 86280 76942</a></div>
+                    </div>
+                    <div class="flex items-center space-x-4 bg-slate-800/50 p-4 rounded-xl">
+                        <div class="bg-pink-600 w-12 h-12 rounded-full flex items-center justify-center"><i class="fab fa-instagram text-xl"></i></div>
+                        <div><p class="text-sm text-gray-300">Instagram</p><a href="https://instagram.com/ravi_hydro_2021" target="_blank" class="text-white font-semibold hover:underline">@ravi_hydro_2021</a></div>
+                    </div>
+                    <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+                        <p class="font-bold"><i class="fas fa-map-pin mr-2 text-cyan-300"></i> Corporate Headquarters</p>
+                        <p class="text-gray-300 text-sm mt-1">3rd Floor Brahm gyant guest house, Samra, Bathri Dalhousie Distt. Chamba, Himachal Pradesh 176306</p>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-5 rounded-xl backdrop-blur-sm">
+                    <h3 class="text-xl font-bold mb-3">Quick Inquiry</h3>
+                    <form action="mailto:ravihydro2021@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full p-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                        <textarea rows="3" placeholder="Project / Service requirement" class="w-full p-3 rounded-lg bg-slate-800 border border-slate-600 text-white placeholder-gray-400"></textarea>
+                        <button class="bg-cyan-600 hover:bg-cyan-500 px-6 py-3 rounded-lg font-semibold transition w-full"><i class="fas fa-paper-plane mr-2"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-slate-950 text-gray-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-5 md:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <span>© 2025 RAVI HYDRO POWER PROJECT PVT. LTD.</span>
+                <span>CIN: U74999HP2021OPC008938</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#home" class="hover:text-white">Home</a>
+                <a href="#services" class="hover:text-white">Services</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu toggle JS -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(menuBtn && mobileMenu){
+            menuBtn.addEventListener('click', ()=>{
+                mobileMenu.classList.toggle('hidden');
+            });
+            // close after click on any link
+            const links = mobileMenu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+        }
+    </script>
+</body>
+</html>
